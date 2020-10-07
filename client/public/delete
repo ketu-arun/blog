@@ -1,0 +1,225 @@
+<section id="recent" class="recent">
+  <div class="container">
+    <div class="container-leftcolumn">
+      <div class="notified">
+        <h1>
+          Get notified through e-mail whenever we post something of your choice
+        </h1>
+
+        <form action="process.php">
+          <div class="usergroup">
+            <label for="name" class="signup-label">Name</label><br />
+            <input type="text" name="username" class="btn-light" />
+            <hr />
+          </div>
+          <div class="usergroup">
+            <label for="email" class="signup-label">E-mail</label><br />
+            <input type="email" name="password" class="btn-light" />
+            <hr />
+          </div>
+          <br />
+          <div class="right-btn">
+            <a href="#" class="right-btn"
+              ><img src="./images/noun_drop down_1619598.svg" alt=""
+            /></a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-rightcolumn">
+      <div class="container-content">
+        <div class="container-header">
+          <h2>Recent post</h2>
+        </div>
+
+        <div class="post-flex">
+          <div class="post-1 post">
+            <!-- <img class="post-image" src="./images/photo-1504083898675-c896ecdae86e@2x.png" alt="img"> -->
+            <div class="box1 box"></div>
+
+            <div class="box1-2">
+              <div>
+                <h2>
+                  <a href="blog-post.html"
+                    >Tips to improve your perspective photography for taking
+                    better pictures</a
+                  >
+                </h2>
+              </div>
+              <div class="flex-form">
+                <div class="flex-column1">
+                  <p>
+                    <img src="./images/Image 29@2x 2.png" alt="" />
+                    <span class="flex-text">Joseph Milton</span>
+                  </p>
+                </div>
+                <br />
+                <div class="flex-column3">
+                  <p>|</p>
+                </div>
+                <br />
+                <div class="flex-column2">
+                  <p>
+                    <img src="./images/clock (1).svg" alt="" />
+                    <span class="flex-text"> 17 min read</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="post-2 post">
+            <div class="box2 box"></div>
+            <!-- <img class="post-image" src="./images/photo-1491406213019-05b162a72c20@2x.png" alt="img"> -->
+            <div class="box2-2">
+              <div>
+                <h2>
+                  <a href="blog-post.html"
+                    >Tips to improve your perspective photography for taking
+                    better pictures</a
+                  >
+                </h2>
+              </div>
+              <div class="flex-form">
+                <div class="flex-column1">
+                  <p>
+                    <img src="./images/Image 29@2x 2.png" alt="" />
+                    <span class="flex-text">Joseph Milton</span>
+                  </p>
+                </div>
+                <br />
+                <div class="flex-column3">
+                  <p>|</p>
+                </div>
+                <br />
+                <div class="flex-column2">
+                  <p>
+                    <img src="./images/clock (1).svg" alt="" />
+                    <span class="flex-text"> 10 min read</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="all" class="all">
+  <div class="container">
+    <div class="container-header">
+      <h2>All posts</h2>
+    </div>
+
+    <div class="container-content">
+      <div class="post-flex">
+        <div class="post-1 post">
+          <!-- <img class="post-image" src="./images/photo-1504083898675-c896ecdae86e@2x.png" alt="img"> -->
+          <div class="box1 box"></div>
+          <div>
+            <h2>
+              <a href="blog-post.html"
+                >Tips to improve your perspective photography for taking better
+                pictures</a
+              >
+            </h2>
+          </div>
+          <div class="flex-form">
+            <div class="flex-column1">
+              <p>
+                <img src="./images/Image 29@2x 2.png" alt="" />
+                <span class="flex-text">Joseph Milton</span>
+              </p>
+            </div>
+            <br />
+            <div class="flex-column3">
+              <p>|</p>
+            </div>
+            <br />
+            <div class="flex-column2">
+              <p>
+                <img src="./images/clock (1).svg" alt="" />
+                <span class="flex-text"> 10 min read</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-2 post">
+          <div class="box2 box"></div>
+          <!-- <img class="post-image" src="./images/photo-1491406213019-05b162a72c20@2x.png" alt="img"> -->
+          <div>
+            <h2>
+              <a href="blog-post.html"
+                >Tips to improve your perspective photography for taking better
+                pictures</a
+              >
+            </h2>
+          </div>
+
+          <div class="flex-form">
+            <div class="flex-column1">
+              <p>
+                <img src="./images/Image 29@2x 2.png" alt="" />
+                <span class="flex-text">Joseph Milton</span>
+              </p>
+            </div>
+            <br />
+            <div class="flex-column3">
+              <p>|</p>
+            </div>
+            <br />
+            <div class="flex-column2">
+              <p>
+                <img src="./images/clock (1).svg" alt="" />
+                <span class="flex-text"> 10 min read</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-3 post">
+          <div class="box3 box"></div>
+          <!-- <img class="post-image" src="./images/StockSnap_VNGQKLNMFM@2x.png" alt="img"> -->
+          <div>
+            <h2>
+              <a href="blog-post.html"
+                >Tips to improve your perspective photography for taking better
+                pictures</a
+              >
+            </h2>
+          </div>
+          <div class="flex-form">
+            <div class="flex-column1">
+              <p>
+                <img src="./images/Image 29@2x 2.png" alt="" />
+                <span class="flex-text">Joseph Milton</span>
+              </p>
+            </div>
+            <br />
+            <div class="flex-column3">
+              <p>|</p>
+            </div>
+            <br />
+            <div class="flex-column2">
+              <p>
+                <img src="./images/clock (1).svg" alt="" />
+                <span class="flex-text"> 10 min read</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--container ends-->
+
+  <div class="button">
+    <a class="btn-blue"> View all</a>
+  </div>
+</main>

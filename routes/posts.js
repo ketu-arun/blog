@@ -1,13 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const router = express.Router();
+// const Post = require("../models/Post");
+// const Category = require("../models/Category");
 const Post = mongoose.model("Post");
 const Category = mongoose.model("Category");
 
 // to get all posts from database
-router.get("/", (req, res) => {
+router.get("/posts", (req, res) => {
   Post.find()
-    .populate("category", "_id name")
+    // .populate("category", "_id name")
     .then((posts) => {
       res.json({ posts });
     })
@@ -75,46 +77,22 @@ router.get("/fresh-stories", (req, res) => {
 });
 
 //submit the data
-router.post("/new-post", (req, res) => {
-  const {
-    title,
-    description,
-    imgUrl,
-    category,
-    numOfLikes,
-    isFeatured,
-  } = req.body;
+router.post("/new-posts", (req, res) => {
+  const { title, author, imgUrl } = req.body;
 
-  if (
-    !title ||
-    !description ||
-    !imgUrl ||
-    !category ||
-    !numOfLikes ||
-    !isFeatured
-  ) {
+  if (!title || !author || !imgUrl) {
     res.json({ err: "All fields are required" });
   }
 
-  Category.findOne({ _id: category.id })
-    .then((cat) => {
-      const post = new Post({
-        title,
-        description,
-        imgUrl,
-        numOfLikes,
-        isFeatured,
-        category: cat,
-      });
-
-      post
-        .save()
-        .then(() => {
-          res.json({ msg: "Post Created" });
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+  const post = new Post({
+    title,
+    author,
+    imgUrl,
+  });
+  post
+    .save()
+    .then(() => {
+      res.json({ msg: "Post Created" });
     })
     .catch((err) => {
       console.log(err);
